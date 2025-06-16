@@ -9,7 +9,7 @@ import "highlight.js/styles/github-dark.css";
 import "./App.css";
 
 function App() {
-  const [code, setCode] = useState(``);
+  const [code, setCode] = useState(`Write Your Code Here to Review...`);
   const [review, setReview] = useState(``);
 
   useEffect(() => {
