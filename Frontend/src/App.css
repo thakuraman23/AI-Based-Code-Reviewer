@@ -1,0 +1,98 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.left, .right {
+  flex-basis: 50%;
+  height: 100%;
+  border-radius: 0.7rem;
+  overflow-y: auto;
+}
+
+.left {
+  background-color: #000000;
+  position: relative;
+  padding: 1rem;
+}
+
+.code {
+  height: calc(100% - 3rem);
+  overflow: auto;
+}
+
+.review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.review:hover {
+  background-color: rgb(180, 180, 255);
+}
+
+.right {
+  background-color: #343434;
+  padding: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Markdown styling */
+.right h1, .right h2, .right h3 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.right p {
+  margin-bottom: 0.75rem;
+}
+
+.right code {
+  background-color: #1e1e1e;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: #ffea00;
+}
+
+.right pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.right ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.right li {
+  margin-bottom: 0.5rem;
+}
